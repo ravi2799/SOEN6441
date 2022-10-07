@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployeeBioData.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">wrapper</a> &gt; <span class="el_source">EmployeeBioData.java</span></div><h1>EmployeeBioData.java</h1><pre class="source lang-java linenums">package wrapper;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+/***
+ * This class is the wrapper class for employer information
+ * @author Geetika Rathi
+ * @version 1.0
+ */
+<span class="fc" id="L11">public class EmployeeBioData {</span>
+	
+		public String status;	//success
+		public cls_result result;
+		public String request_id;	//bd270a0729af183596f53720f5332cdc
+<span class="fc" id="L16">	public static class cls_result {</span>
+			public Integer id;	//58954485
+			public String username;	//appgiantLTD
+			public boolean closed;
+			public Integer hourly_rate;	//20
+			public String registration_date;	//1636203357
+	    	public boolean limited_account;
+			public String display_name;	//App Giant
+			public cls_location location;
+			public String role;	//freelancer
+			public String chosen_role;	//freelancer
+			public cls_status status;
+			public cls_primary_currency primary_currency;
+			public String public_name;	//App Giant
+			public String company;	
+			public boolean escrowcom_account_linked;
+			public boolean escrowcom_interaction_required;
+			public boolean oauth_password_credentials_allowed;
+			public boolean registration_completed;
+			public boolean is_profile_visible;
+		}
+<span class="fc" id="L37">	public static class cls_location {</span>
+		public cls_country country;
+		
+	}
+<span class="fc" id="L41">	public static class cls_country {</span>
+		public String name;	//India
+	}
+<span class="fc" id="L44">	public static class cls_status {</span>
+		public boolean email_verified;
+	}
+	
+<span class="fc" id="L48">	public static class cls_primary_currency {</span>
+		public String name;	//Indian Rupee
+	}
+		
+	}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

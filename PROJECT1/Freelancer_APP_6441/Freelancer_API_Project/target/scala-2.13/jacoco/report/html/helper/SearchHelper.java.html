@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SearchHelper.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">helper</a> &gt; <span class="el_source">SearchHelper.java</span></div><h1>SearchHelper.java</h1><pre class="source lang-java linenums">package helper;
+
+import javax.inject.*;
+import play.libs.ws.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.stream.Collectors;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import models.RestfulService;
+import helper.SearchHelper;
+import wrapper.ProjectInfoWrapper;
+import wrapper.ProjectResults;
+import wrapper.Project;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+
+// import com.fasterxml.jackson.databind.ObjectMapper;
+
+/**
+ * @author Arvind Sangwan, Shaurya Ahuja, Raviraj Savaliya
+ * @version 1.0
+ */
+
+public class SearchHelper {
+    ProjectResults projectResults;
+    RestfulService restfulService;
+    private ObjectMapper mapper;
+<span class="fc" id="L36">    static StringBuilder globalPreviewDesc = new StringBuilder();</span>
+
+    @Inject
+    public SearchHelper(
+<span class="fc" id="L40">            RestfulService restfulService, ProjectResults projectResults) {</span>
+<span class="fc" id="L41">        this.projectResults = projectResults;</span>
+<span class="fc" id="L42">        this.restfulService = restfulService;</span>
+<span class="fc" id="L43">        mapper = new ObjectMapper();</span>
+<span class="fc" id="L44">        mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);</span>
+<span class="fc" id="L45">    }</span>
+
+    /**
+     * This method return the list of projects on basis of searched keyword id
+     * 
+     * @param searchKeyWord,projectDataMap searched keyword and hashmap
+     * @return list of projects on basis of searchKeyWord
+     */
+    public CompletableFuture&lt;List&lt;Project&gt;&gt; searchProject(String searchKeyWord,
+            HashMap&lt;String, List&lt;Project&gt;&gt; projectDataMap) {
+
+<span class="fc" id="L56">        return restfulService.searchProjectKeyword(searchKeyWord).thenApplyAsync(</span>
+                json -&gt; {
+                    ProjectInfoWrapper projectInfo = new ProjectInfoWrapper();
+                    try {
+<span class="fc" id="L60">                        projectInfo = mapper.convertValue(json, new TypeReference&lt;ProjectInfoWrapper&gt;() {</span>
+                        });
+
+                        // projectInfo.time_submitted = new
+                        // SimpleDateFormat(projectInfo.time_submitted);
+                    } catch (Exception ex) {
+                        System.out.println(&quot;Parsing json Failure !!!!!!   - Exception :&quot; + ex);
+                    }
+                    if (this.projectResults.getProjectsSize() &lt; 100 &amp;&amp; projectInfo.result != null)
+                        this.projectResults.setProjects(projectInfo.result.projects, searchKeyWord);
+                    projectDataMap.put(searchKeyWord, this.projectResults.getProjects());
+                    return this.projectResults.getProjects();
+                });
+    }
+
+    /**
+     * This method return the list of projects on basis of skill id
+     * 
+     * @param skillsName,skillsID,projectDataMap name of skill,skill id and hashmap
+     * @return list of projects on basis of preview_description
+     */
+
+    public CompletableFuture&lt;List&lt;Project&gt;&gt; searchProjectsBySkills(String skillsName, String skillsID,
+            HashMap&lt;String, List&lt;Project&gt;&gt; projectDataMap) {
+<span class="fc" id="L84">        return restfulService.getProjectsBySkills(skillsID).thenApplyAsync(</span>
+                json -&gt; {
+                    ProjectInfoWrapper projectInfo = new ProjectInfoWrapper();
+                    try {
+<span class="fc" id="L88">                        projectInfo = mapper.convertValue(json, new TypeReference&lt;ProjectInfoWrapper&gt;() {</span>
+                        });
+                    } catch (Exception ex) {
+                        System.out.println(&quot;Parsing json Failure !!!!!!   - Exception :&quot; + ex);
+                    }
+                    if (this.projectResults.getProjectsSize() &lt; 100 &amp;&amp; projectInfo.result != null)
+                        this.projectResults.setProjects(projectInfo.result.projects, skillsName);
+                    projectDataMap.put(skillsName, this.projectResults.getProjects());
+                    return this.projectResults.getProjects();
+                });
+    }
+
+    /**
+     * This method return the syllables count present in the preview_description of
+     * project
+     * 
+     * @param preview_description to decide the fIndex
+     * @return syllables on basis of preview_description
+     */
+
+    public static double getSyllables(String preview_description) {
+<span class="fc" id="L109">        Pattern pattern = Pattern.compile(&quot;[aeiouy]+[^$e(,.:;!?)]&quot;);</span>
+<span class="fc" id="L110">        Matcher matcher = pattern.matcher(preview_description);</span>
+<span class="fc" id="L111">        int syllableCounter = 0;</span>
+<span class="fc bfc" id="L112" title="All 2 branches covered.">        while (matcher.find()) {</span>
+<span class="fc" id="L113">            syllableCounter++;</span>
+        }
+<span class="fc" id="L115">        return syllableCounter;</span>
+    }
+
+    /**
+     * This method return the appropriate fkgl level on basis of preview_description
+     * of project
+     * 
+     * @param preview_description to decide the fkgl index
+     * @return fkgl on basis of preview_description
+     */
+
+    public static double getSentences(String preview_description) {
+<span class="fc" id="L127">        double sentences = 0;</span>
+<span class="fc" id="L128">        String[] sentenceList = preview_description.split(&quot;[!?.:]+&quot;);</span>
+<span class="fc" id="L129">        sentences = sentences + sentenceList.length;</span>
+<span class="fc" id="L130">        return sentences;</span>
+    }
+    
+    /**
+     * This method return the word count on basis of preview_description
+     * of project
+     * 
+     * @param preview_description to decide the fkgl index
+     * @return wordCount on basis of preview_description
+     */
+    public static double getWords(String preview_description) {
+<span class="fc" id="L141">        double wordCounter = 0;</span>
+<span class="fc bfc" id="L142" title="All 2 branches covered.">        for (int i = 0; i &lt; preview_description.length(); i++) {</span>
+<span class="fc bfc" id="L143" title="All 6 branches covered.">            if (((i &gt; 0) &amp;&amp; (preview_description.charAt(i) != ' ') &amp;&amp; (preview_description.charAt(i - 1) == ' '))</span>
+<span class="pc bpc" id="L144" title="1 of 4 branches missed.">                    || ((preview_description.charAt(0) != ' ') &amp;&amp; (i == 0)))</span>
+<span class="fc" id="L145">                wordCounter++;</span>
+        }
+<span class="fc" id="L147">        return wordCounter;</span>
+    }
+
+    /**
+     * This method return the appropriate fIndex level on basis of
+     * preview_description of project
+     * 
+     * @param preview_description to decide the fIndex
+     * @return fIndex on basis of preview_description
+     */
+
+    public static double getFindex(String preview_description) {
+<span class="fc" id="L159">        double words = getWords(preview_description);</span>
+<span class="fc" id="L160">        double syllables = getSyllables(preview_description);</span>
+<span class="fc" id="L161">        double sentences = getSentences(preview_description);</span>
+
+<span class="pc bpc" id="L163" title="1 of 4 branches missed.">        if (preview_description == &quot;&quot; || words == 0) {</span>
+<span class="fc" id="L164">            return 999;</span>
+        }
+<span class="fc" id="L166">        return 206.835 - 84.6 * (syllables / words) - 1.015 * (words / sentences);</span>
+    }
+
+    /**
+     * This method return the appropriate fkgl level on basis of
+     * preview_description of project
+     * 
+     * @param preview_description to decide the fIndex
+     * @return fIndex on basis of preview_description
+     */
+    public static double getFKglIndex(String preview_description) {
+<span class="fc" id="L177">        double words = getWords(preview_description);</span>
+<span class="fc" id="L178">        double syllables = getSyllables(preview_description);</span>
+<span class="fc" id="L179">        double sentences = getSentences(preview_description);</span>
+<span class="pc bpc" id="L180" title="1 of 4 branches missed.">        if (preview_description == &quot;&quot; || words == 0) {</span>
+<span class="fc" id="L181">            return 999;</span>
+        }
+<span class="fc" id="L183">        return 0.39 * (words / sentences) + 11.8 * (syllables / words);</span>
+    }
+
+    /**
+     * This method return the appropriate education level on basis of fIndex
+     * 
+     * @param fIndex to decide the education level
+     * @return string on basis of fIndex
+     */
+
+    public static String educationalLevelMapper(double fIndex) {
+<span class="fc bfc" id="L194" title="All 2 branches covered.">        if (fIndex &lt;= 0)</span>
+<span class="fc" id="L195">            return &quot;Law School Graduate&quot;;</span>
+<span class="pc bpc" id="L196" title="1 of 4 branches missed.">        else if (fIndex &lt;= 30 &amp;&amp; fIndex &gt; 0)</span>
+<span class="fc" id="L197">            return &quot;College Graduate&quot;;</span>
+<span class="pc bpc" id="L198" title="1 of 4 branches missed.">        else if (fIndex &lt;= 51 &amp;&amp; fIndex &gt; 31)</span>
+<span class="fc" id="L199">            return &quot;Some College&quot;;</span>
+<span class="pc bpc" id="L200" title="1 of 4 branches missed.">        else if (fIndex &lt;= 61 &amp;&amp; fIndex &gt; 51)</span>
+<span class="fc" id="L201">            return &quot;High School&quot;;</span>
+<span class="pc bpc" id="L202" title="1 of 4 branches missed.">        else if (fIndex &lt;= 66 &amp;&amp; fIndex &gt; 61)</span>
+<span class="fc" id="L203">            return &quot;9th Grade&quot;;</span>
+<span class="pc bpc" id="L204" title="1 of 4 branches missed.">        else if (fIndex &lt;= 71 &amp;&amp; fIndex &gt; 66)</span>
+<span class="fc" id="L205">            return &quot;8th Grade&quot;;</span>
+<span class="pc bpc" id="L206" title="1 of 4 branches missed.">        else if (fIndex &lt;= 81 &amp;&amp; fIndex &gt; 71)</span>
+<span class="fc" id="L207">            return &quot;7th Grade&quot;;</span>
+<span class="pc bpc" id="L208" title="1 of 4 branches missed.">        else if (fIndex &lt;= 91 &amp;&amp; fIndex &gt; 81)</span>
+<span class="fc" id="L209">            return &quot;6th Grade&quot;;</span>
+<span class="pc bpc" id="L210" title="1 of 4 branches missed.">        else if (fIndex &lt;= 100 &amp;&amp; fIndex &gt; 91)</span>
+<span class="fc" id="L211">            return &quot;5th Grade&quot;;</span>
+<span class="fc" id="L212">        return &quot;Early&quot;;</span>
+    }
+
+    /**
+     * This method return the string of preview_description of global data
+     * @author Raviraj Savaliya
+     * @param projectDataMap List of project
+     * @return string containing the info of preview description
+     */
+    public static String get_GlobalPreviewDesc(List&lt;Project&gt; projectDataMap) {
+<span class="fc bfc" id="L222" title="All 2 branches covered.">        if (projectDataMap != null) {</span>
+<span class="fc" id="L223">            String globalPreviewDesc1 = projectDataMap.stream()</span>
+<span class="fc" id="L224">                    .map(Project::getPreview_description)</span>
+<span class="fc" id="L225">                    .collect(Collectors.joining(&quot;\n&quot;));</span>
+<span class="fc" id="L226">            globalPreviewDesc = globalPreviewDesc.append(globalPreviewDesc1);</span>
+<span class="fc" id="L227">            return globalPreviewDesc.toString();</span>
+        }
+<span class="fc" id="L229">        return &quot;&quot;;</span>
+
+    }
+
+    /**
+     * This method returns the string of preview_description of local data
+     * @author Raviraj Savaliya
+     * @param projects - List of project
+     * @param projectId - Id of the projects
+     * @return string containing the info of preview description for local data
+     */
+    public static String getLocalPreviewDesc(List&lt;Project&gt; projects, int projectId) {
+<span class="fc bfc" id="L241" title="All 2 branches covered.">        if (projects != null) {</span>
+<span class="fc" id="L242">            return projects.stream()</span>
+<span class="fc" id="L243">                    .filter(e -&gt; (e.id) == (projectId))</span>
+<span class="fc" id="L244">                    .map(pm -&gt; pm.preview_description)</span>
+<span class="fc" id="L245">                    .collect(Collectors.joining(&quot;\n&quot;));</span>
+        }
+<span class="fc" id="L247">        return &quot;&quot;;</span>
+
+    }
+
+    /**
+     * This is the getter method for string builder
+     * @return global preview description
+     */
+    public static StringBuilder getGlobalPreviewDesc() {
+<span class="fc" id="L256">        return globalPreviewDesc;</span>
+    }
+    
+    /**
+     * This is the setter method for string builder
+     */
+    public static void setGlobalPreviewDesc(StringBuilder globalPreviewDesc) {
+<span class="fc" id="L263">        SearchHelper.globalPreviewDesc = globalPreviewDesc;</span>
+<span class="fc" id="L264">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

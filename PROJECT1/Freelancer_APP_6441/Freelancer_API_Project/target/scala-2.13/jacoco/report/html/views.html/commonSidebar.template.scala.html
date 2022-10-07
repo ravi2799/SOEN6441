@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>commonSidebar.template.scala</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">views.html</a> &gt; <span class="el_source">commonSidebar.template.scala</span></div><h1>commonSidebar.template.scala</h1><pre class="source lang-java linenums">
+package views.html
+
+import _root_.play.twirl.api.TwirlFeatureImports._
+import _root_.play.twirl.api.TwirlHelperImports._
+import _root_.play.twirl.api.Html
+import _root_.play.twirl.api.JavaScript
+import _root_.play.twirl.api.Txt
+import _root_.play.twirl.api.Xml
+import models._
+import controllers._
+import play.api.i18n._
+import views.html._
+import play.api.templates.PlayMagic._
+import java.lang._
+import java.util._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.api.data.Field
+import play.data._
+import play.core.j.PlayFormsMagicForJava._
+import scala.jdk.CollectionConverters._
+
+<span class="pc" id="L24">object commonSidebar extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template0[play.twirl.api.HtmlFormat.Appendable] {</span>
+
+  /**/
+  def apply/*1.2*/():play.twirl.api.HtmlFormat.Appendable = {
+<span class="fc" id="L28">    _display_ {</span>
+      {
+
+
+<span class="fc" id="L32">Seq[Any](format.raw/*1.4*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L33">&quot;&quot;&quot;),_display_(/*2.2*/defining(play.core.PlayVersion.current)/*2.41*/ { version =&gt;_display_(Seq[Any](format.raw/*2.54*/(&quot;&quot;&quot;</span>
+&quot;&quot;&quot;),format.raw/*3.1*/(&quot;&quot;&quot;&lt;h3&gt;Table of Contents&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&quot;&quot;),_display_(/*5.17*/routes/*5.23*/.HomeController.index),format.raw/*5.44*/(&quot;&quot;&quot;#Introduction&quot;&gt;Welcome&lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&quot;&quot;),_display_(/*6.17*/routes/*6.23*/.HomeController.explore),format.raw/*6.46*/(&quot;&quot;&quot;&quot;&gt;Play application overview&lt;/a&gt;
+  &lt;li&gt;&lt;a href=&quot;&quot;&quot;&quot;),_display_(/*7.17*/routes/*7.23*/.HomeController.tutorial),format.raw/*7.47*/(&quot;&quot;&quot;&quot;&gt;Implementing Hello World&lt;/a&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Related Resources&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://playframework.com/documentation/&quot;&quot;&quot;),_display_(/*11.57*/version),format.raw/*11.64*/(&quot;&quot;&quot;&quot; target=&quot;_blank&quot;&gt;Play documentation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://discuss.lightbend.com/c/play/&quot; target=&quot;_blank&quot;&gt;Forum&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gitter.im/playframework/playframework&quot; target=&quot;_blank&quot;&gt;Gitter Channel&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/tagged/playframework&quot; target=&quot;_blank&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://lightbend.com/how&quot; target=&quot;_blank&quot;&gt;Professional support&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&quot;&quot;&quot;)))}))
+      }
+    }
+  }
+
+<span class="fc" id="L53">  def render(): play.twirl.api.HtmlFormat.Appendable = apply()</span>
+
+<span class="nc" id="L55">  def f:(() =&gt; play.twirl.api.HtmlFormat.Appendable) = () =&gt; apply()</span>
+
+<span class="nc" id="L57">  def ref: this.type = this</span>
+
+}
+
+
+              /*
+                  -- GENERATED --
+                  SOURCE: app/views/commonSidebar.scala.html
+                  HASH: 849d5aa39b5290354b75f0bd9d902c4d110f12f6
+                  MATRIX: 908-&gt;1|1004-&gt;3|1032-&gt;6|1079-&gt;45|1129-&gt;58|1157-&gt;60|1233-&gt;110|1247-&gt;116|1288-&gt;137|1358-&gt;181|1372-&gt;187|1415-&gt;210|1490-&gt;259|1504-&gt;265|1548-&gt;289|1704-&gt;418|1732-&gt;425
+                  LINES: 27-&gt;1|32-&gt;1|33-&gt;2|33-&gt;2|33-&gt;2|34-&gt;3|36-&gt;5|36-&gt;5|36-&gt;5|37-&gt;6|37-&gt;6|37-&gt;6|38-&gt;7|38-&gt;7|38-&gt;7|42-&gt;11|42-&gt;11
+                  -- GENERATED --
+              */
+          
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

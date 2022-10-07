@@ -1,0 +1,21 @@
+# Routes
+
+# This file defines all application routes (Higher priority routes first)
+
+# ~~~~
+
+# An example controller showing a sample home page
+
+GET / controllers.HomeController.index(request:Request)
+GET /explore controllers.HomeController.explore
+GET /tutorial controllers.HomeController.tutorial
+GET		/SearchPage							controllers.HomeController.searchProjectsPage(request:Request,keyword:String)
+
+GET     /clearSession               controllers.HomeController.clearSession(request:Request)
+GET		/projectsBySkill	controllers.HomeController.searchBySkills(request:Request,skillsName:String,skillsID:String)
+GET     /owner_id/:owner_id                             controllers.HomeController.ownerInfoPage(owner_id:String)
+GET /GlobalStatistics/:keyword              controllers.HomeController.renderStats(keyword:String)
+GET /LocalStatistics/:keyword/:projectid               controllers.HomeController.renderlocalStats(keyword:String, projectid : Int)
+# Map static resources from the /public folder to the /assets URL path
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

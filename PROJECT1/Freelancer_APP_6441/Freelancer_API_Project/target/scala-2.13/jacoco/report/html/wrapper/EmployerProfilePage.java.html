@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>EmployerProfilePage.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">wrapper</a> &gt; <span class="el_source">EmployerProfilePage.java</span></div><h1>EmployerProfilePage.java</h1><pre class="source lang-java linenums">package wrapper;
+
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+
+
+/***This class is the POJO class for Employer Page
+ * @author Geetika Rathi
+ * @version 1.0
+ */
+<span class="fc" id="L12">public class EmployerProfilePage {</span>
+	public EmployeeBioData employerProfileInfo;
+	public ProjectEmployeeInfo employerProjectInfo;
+	public EmployeeBioData getEmployerProfileInfo() {
+<span class="fc" id="L16">		return employerProfileInfo;</span>
+	}
+	public void setEmployerProfileInfo(EmployeeBioData employerProfileInfo) {
+<span class="fc" id="L19">		employerProfileInfo.result.registration_date = new SimpleDateFormat(&quot;MMMM d, yyyy&quot;)</span>
+<span class="fc" id="L20">                .format(new Date(Integer.parseInt(employerProfileInfo.result.registration_date) * 1000L));</span>
+<span class="fc" id="L21">		this.employerProfileInfo = employerProfileInfo;</span>
+<span class="fc" id="L22">	}</span>
+	public ProjectEmployeeInfo getEmployerProjectInfo() {
+<span class="fc" id="L24">		return employerProjectInfo;</span>
+	}
+	public void setEmployerProjectInfo(ProjectEmployeeInfo employerProjectInfo) {
+		
+<span class="fc" id="L28">		  Arrays.asList(employerProjectInfo.result.projects).stream().forEach(pr1 -&gt;{</span>
+		  pr1.time_submitted = new SimpleDateFormat(&quot;MMMM d, yyyy&quot;)
+                  .format(new Date(Integer.parseInt(pr1.time_submitted) * 1000L));
+		 });   
+<span class="fc" id="L32">		this.employerProjectInfo = employerProjectInfo;</span>
+<span class="fc" id="L33">	}</span>
+	
+	
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

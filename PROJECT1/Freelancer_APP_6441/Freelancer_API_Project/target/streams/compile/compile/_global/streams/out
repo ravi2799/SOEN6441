@@ -1,0 +1,12 @@
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Shree\Desktop\MS\Assignment\SOEN 6441\PROJECT1\Freelancer_APP_6441\Freelancer_API_Project\app\views\commonSidebar.scala.html:5:39: Auto-application to `()` is deprecated. Supply the empty argument list `()` explicitly to invoke method index,[0m
+[0m[[0m[33mwarn[0m] [0m[0mor remove the empty argument list from its definition (Java-defined methods are exempt).[0m
+[0m[[0m[33mwarn[0m] [0m[0mIn Scala 3, an unapplied method like this will be eta-expanded into a function.[0m
+[0m[[0m[33mwarn[0m] [0m[0m  <li><a href="@routes.HomeController.index#Introduction">Welcome</a>[0m
+[0m[[0m[33mwarn[0m] [0m[0m                                      ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Shree\Desktop\MS\Assignment\SOEN 6441\PROJECT1\Freelancer_APP_6441\Freelancer_API_Project\app\views\EmployerProfile.scala.html:79:43: comparing values of types Boolean and Null using `!=` will always yield true[0m
+[0m[[0m[33mwarn[0m] [0m[0m		@if(employerInfo.result.limited_account !=null){[0m
+[0m[[0m[33mwarn[0m] [0m[0m		                                        ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mC:\Users\Shree\Desktop\MS\Assignment\SOEN 6441\PROJECT1\Freelancer_APP_6441\Freelancer_API_Project\app\views\EmployerProfile.scala.html:122:49: comparing values of types Boolean and Null using `!=` will always yield true[0m
+[0m[[0m[33mwarn[0m] [0m[0m		@if(employerInfo.result.status.email_verified != null){[0m
+[0m[[0m[33mwarn[0m] [0m[0m		                                              ^[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m

@@ -1,0 +1,256 @@
+@import java.util
+@import wrapper.Project
+
+@(searchResult: List[wrapper.Project], request: play.mvc.Http.Request, searchedKeyword: String, cacheData: HashMap[String, List[wrapper.Project]], projectDataMap: HashMap[String, List[wrapper.Project]], globalPreviewDesc:String)
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.container{
+margin-top:4em;
+}
+.ml-2{
+    margin-left: 1em;
+}
+.flex__row{
+display: flex;
+justify-content:center;
+align-items:center;
+}
+.search__field{
+padding:3px;
+outline: none;
+outline-width:none;
+min-width: 20em;
+min-height: 3em;
+}
+.search__btn{
+padding:5px;
+margin-left:1em;
+width:10em;
+height: 2em;
+border-radius: 1em;
+color: #fff;
+background-color: #2196f3eb;
+font-weight: 600;
+}
+.flex__row__project{
+display: flex;
+justify-content:flex-start;
+
+}
+.mt-3{
+    margin-top: 2em;
+}
+</style>
+<script>
+            let rawLine="";
+            function loadDataFromWrapper() {
+                let raw = "";
+                @for( (keyword, searchResult:List[Project]) <- cacheData ){
+                @if(keyword!=searchedKeyword) {
+                @if(request.session().get(keyword+ "-result").isPresent()){
+                raw += "<table>" +
+
+                    "<tr> " +
+                    "<td>Search term is: @keyword </td>" +
+                    "<td> Findex: @{searchResult.map(_.fIndex).sum/searchResult.size()}</td>" +
+                    "<td>Fkgl index is: @{searchResult.map(_.fkglIndex).sum/searchResult.size()}</td>" +
+                    "<td><a class=\"ml-2\" href=\"/GlobalStatistics/@searchedKeyword\">GlobalStats</a></td>"+
+                
+                    @for((project,index)<-searchResult.zipWithIndex){
+                        "<tr>" +
+                            "<td>@{index+11}</td>"+
+                        "<td><a class=\"ml-2\" href=\"/owner_id/@project.owner_id\">Owner ID </a></td>"
+                        
+                        +
+
+                        "<td><span class=\"ml-2\">@project.time_submitted</span></td>"+
+
+                        "<td><span class=\"ml-2\"><a href=\"https://www.freelancer.com/projects/@project.seo_url?w=f&ngsw-bypass=\" target=\"_blank\">@project.title</a></span></td>"
+                        +
+
+                        "<td><span class=\"ml-2\">type:@project.project_type</span></td>"+
+
+                        "<td><span class=\"ml-2\">@project.educationalStatus </span></td>"
+                        
+                        +
+                        "<td><span class=\"ml-2\">Findex: </span></td>"
+                        +
+                        "<td><span class=\"ml-2\"> <a class=\"ml-2\" href=\"/LocalStatistics/@keyword/@project.id\">LocalStats</a></span></td>"
+                        +
+                            
+                        
+                        "<td><span class=\"ml-2\">@project.fIndex</span></td>"
+
+                        +
+                        "<td><span class=\"ml-2\">Skills: </span></td>"
+
+                        +"<td>"+ "[" + 
+                        @for(skill <- (project.jobs)) {
+                                "<a href =\"/projectsBySkill?skillsName=@skill.name&skillsID=@skill.id\" class=\"ml-2\">@skill.name</a> " + 
+                        }
+                        "]" +
+                    }
+                    "</td></tr>" +
+                     "</table>";
+                }}}
+                document.getElementById("cacheContent").innerHTML = raw;
+            }
+
+</script>
+<style>
+            table {
+                display: inline;
+            }
+
+            .infoTable, .infoTable2 {
+                font-family: Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+
+            }
+
+            body {
+                background-color: #e7e7e7;
+            }
+
+            .infoTable td, .infoTable th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            .infoTable2 td, .infoTable2 th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #titleOfIssue {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            input[type=text] {
+                border: 2px solid green;
+                border-radius: 4px;
+                width: 100%;
+                height: 40px;
+                padding-left: 20px;
+            }
+
+            #btn_submit {
+                background-color: #4CAF50; /* Green */
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            div {
+                display: inline-block;
+            }
+
+            .infoTable tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .infoTable tr:hover {
+                background-color: #ddd;
+            }
+
+            .infoTable th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            .infoTable2 tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            .infoTable2 tr:hover {
+                background-color: #ddd;
+            }
+
+            .infoTable2 th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+
+            a {
+                text-decoration: none;
+                text-size: 100px;
+            }
+            .layout-container{
+                display: flex;
+                flex-direction: column;
+            }
+            .container-fluid{
+                max-width: 100vw;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+            
+    </style>
+<body onload="loadDataFromWrapper()">
+
+    <form method="GET" action="/SearchPage">
+        <div class="flex__row container">
+            <input name="keyword" id="search__text" class="search__field" placeholder="Enter Search items"></input>
+            <button  type="submit"  class="search__btn">GO!</button>
+        </div>
+    </form>
+
+
+    <div class="layout-container">
+        <div class="container-fluid">
+        @if(searchResult != null && searchResult.size > 0){
+            @for( (keyword, projectList:List[Project]) <- cacheData ){
+                @if(keyword == searchedKeyword){
+                    <span>Search term is: @keyword  Findex:@{projectList.map(_.fIndex).sum/searchResult.size()}  FKGL:@{projectList.map(_.fkglIndex).sum/searchResult.size()}  <a class="ml-2" href="/GlobalStatistics/@searchedKeyword">GlobalStats</a></span>
+                    
+                @for((project,index) <- (projectList.zipWithIndex).reverse) {
+                <div class="flex__row__project">
+                    
+                    @{-(index-searchResult.size)}. <a class="ml-2" href="/owner_id/@project.owner_id">Owner ID </a>
+                    <span class="ml-2">@project.time_submitted</span>
+                    <span class="ml-2"><a href="https://www.freelancer.com/projects/@project.seo_url?w=f&ngsw-bypass=" target="_blank">@project.title</a>
+                    </span>
+                    <span class="ml-2">type:@project.project_type</span>
+                    
+                    <span class="ml-2">Educational Level: @project.educationalStatus</span>
+                    <span class="ml-2"> <a class="ml-2" href="/LocalStatistics/@searchedKeyword/@project.id">LocalStats</a></span>
+                    <span class="ml-2">Findex: @project.fIndex</span>
+                    <span class="ml-2">Skills: </span>
+                        @for(skill <- (project.jobs)) {
+                            <a href ="/projectsBySkill?skillsName=@skill.name&skillsID=@skill.id" class="ml-2">@skill.name</a>
+                        }
+        
+                </div>
+            }
+                }
+                
+            }
+           
+        }
+</div>
+    
+        <div id="cacheContent">
+        </div></div>
+   
+</body>
+</html>

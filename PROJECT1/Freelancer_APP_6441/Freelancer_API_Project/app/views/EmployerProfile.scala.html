@@ -1,0 +1,168 @@
+@(employerInfo: wrapper.EmployeeBioData, employerProjectInfo: wrapper.ProjectEmployeeInfo)
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+table{
+	display: inline;
+}
+#infoTable {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  
+}
+body{
+	background-color:#e7e7e7;
+}
+#infoTable td, #infoTable th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+#titleOfIssue{
+	font-size : 20px;
+	text-align : center;
+}
+div{
+ display : inline-block;
+}
+#infoTable tr:nth-child(even){background-color: #f2f2f2;}
+
+#infoTable tr:hover {background-color: #ddd;}
+
+#infoTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+a{
+	text-decoration:none; 
+	text-size:100px;
+}
+	</style>
+<body>
+
+    <body>
+<div style="padding-left:100px;height:100%;width:59%;">
+	
+	<table  class="infoTable">
+	<span><h3>Employer Profile Page</h3></span>
+	<tr ><th colspan="2">Employer Information</th></tr>
+	@if(employerInfo.result.id!= null){
+	
+	    @if(employerInfo.result.id !=null){
+	    		
+			<tr>
+				<td>ID</td>
+				<td>@employerInfo.result.id</td>
+			</tr>
+	    }	
+	    @if(employerInfo.result.username !=null){
+	    		
+			<tr>
+				<td>User Name</td>
+				<td>@employerInfo.result.username</td>
+			</tr>
+	    }
+		@if(employerInfo.result.registration_date !=null){
+	    		
+			<tr>
+				<td>Registration Date</td>
+				<td>@employerInfo.result.registration_date</td>
+			</tr>
+	    }
+		@if(employerInfo.result.limited_account !=null){
+	    		
+			<tr>
+				<td>Limited Account</td>
+				<td>@employerInfo.result.limited_account</td>
+			</tr>
+	    }
+
+
+	  
+	    
+	    @if(employerInfo.result.display_name != null){
+	    		
+			<tr>
+				<td>Display Name</td>
+				<td>@employerInfo.result.display_name</td>
+			</tr>
+	    }
+			    @if(employerInfo.result.location.country.name != null){
+	    		
+			<tr>
+				<td>Country</td>
+				<td>@employerInfo.result.location.country.name</td>
+			</tr>
+	    }
+		
+		
+		@if(employerInfo.result.role != null){
+	    		
+			<tr>
+				<td>Role</td>
+				<td>@employerInfo.result.role</td>
+			</tr>
+			
+	    }
+		@if(employerInfo.result.chosen_role != null){
+	    		
+			<tr>
+				<td>Chosen Role</td>
+				<td>@employerInfo.result.chosen_role</td>
+			</tr>
+			
+	    }
+		@if(employerInfo.result.status.email_verified != null){
+	    		
+			<tr>
+				<td>Email Verified</td>
+				<td>@employerInfo.result.status.email_verified </td>
+			</tr>
+			
+	    }
+		@if(employerInfo.result.primary_currency.name != null){
+	    		
+			<tr>
+				<td>Primary Currency</td>
+				<td>@employerInfo.result.primary_currency.name</td>
+			</tr>
+			
+	    }
+	}
+	<tr>
+	
+	</tr>
+	
+	</table>
+
+<div></div>
+
+<div style="padding-left:0px;height:100%;width:60%">
+	<table  class="infoTable">
+	<tr><th>Projects Overview
+	</th></tr>
+	@if(employerProjectInfo!= null &&  employerProjectInfo.result.projects!=null){
+	 @for(po <- employerProjectInfo.result.projects) {
+		<tr>
+			<td><b>ID : <span id="Id">@po.id<span></b></br></br>
+				
+			</td>
+			<td><b><span id="Title">@po.title<span></b></br></br>
+			</td>
+			<td><b><span id="Time Submitted">@po.time_submitted<span></b></br></br>
+		</tr>
+		}
+	} 
+
+	</table>
+	
+
+</body>
+</html>

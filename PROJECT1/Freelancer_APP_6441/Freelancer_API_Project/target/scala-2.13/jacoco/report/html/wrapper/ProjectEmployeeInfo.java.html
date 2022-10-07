@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ProjectEmployeeInfo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">wrapper</a> &gt; <span class="el_source">ProjectEmployeeInfo.java</span></div><h1>ProjectEmployeeInfo.java</h1><pre class="source lang-java linenums">package wrapper;
+/***This class is the wrapper class for Employer's Projects information
+ * @author Geetika Rathi
+ * @version 1.0
+ */
+<span class="fc" id="L6">public class ProjectEmployeeInfo {</span>
+	public String status; // success
+	public cls_result result;
+	public String request_id; // 7e0f2ca067ccc2d752b3c8012afd97db
+
+<span class="fc" id="L11">	public static class cls_result {</span>
+    public cls_projects[] projects;
+	}
+
+<span class="fc" id="L15">	public static class cls_projects {</span>
+		public Integer id; // 33140506
+		public Integer owner_id; // 58954485
+		public String title; // Need full time react native developer -- 2
+		public String status; // active
+		public String seo_url; // javascript/Need-full-time-react-native-33140506
+		public cls_currency currency;
+		public Integer submitdate; // 1646737780
+		public String preview_description; // We are in need of a full time or part time react native developer to help
+											// with our projects. Develop
+		public boolean deleted;
+		public boolean nonpublic;
+		public boolean hidebids;
+		public String type; // fixed
+		public Integer bidperiod; // 7
+		public cls_budget budget;
+		public boolean featured;
+		public boolean urgent;
+		public cls_bid_stats bid_stats;
+		public String time_submitted; // 1646737780
+		public cls_upgrades upgrades;
+		public String language; // en
+		public boolean hireme;
+		public String frontend_project_status; // open
+		public boolean local;
+		public boolean negotiated;
+		public Integer time_free_bids_expire; // 1646734180
+		public boolean is_escrow_project;
+		public boolean is_seller_kyc_required;
+		public boolean is_buyer_kyc_required;
+	}
+
+<span class="fc" id="L47">	public static class cls_currency {</span>
+		public Integer id; // 11
+		public String code; // INR
+		public String sign; // ₹
+		public String name; // Indian Rupee
+		public Double exchange_rate; // 0.013002
+		public String country; // IN
+		public boolean is_external;
+		public boolean is_escrowcom_supported;
+	}
+
+
+<span class="fc" id="L59">	public static class cls_budget {</span>
+		public Integer minimum; // 5000
+		public Integer maximum; // 25000
+	}
+
+
+<span class="fc" id="L65">	public static class cls_bid_stats {</span>
+		public Integer bid_count; // 10
+		public Double bid_avg; // 23193.3
+	}
+
+
+<span class="fc" id="L71">	public static class cls_upgrades {</span>
+		public boolean featured;
+		public boolean sealed;
+		public boolean nonpublic;
+		public boolean fulltime;
+		public boolean urgent;
+		public boolean qualified;
+		public boolean NDA;
+		public boolean ip_contract;
+		public boolean non_compete;
+		public boolean project_management;
+		public boolean pf_only;
+	}
+}
+
+
+
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

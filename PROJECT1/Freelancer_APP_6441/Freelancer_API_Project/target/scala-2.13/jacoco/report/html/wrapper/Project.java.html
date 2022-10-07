@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Project.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">wrapper</a> &gt; <span class="el_source">Project.java</span></div><h1>Project.java</h1><pre class="source lang-java linenums">package wrapper;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import helper.SearchHelper;
+
+/**
+ * @author Arvind Sangwan ,Raviraj Savaliya
+ * @version 1.0
+ */
+<span class="fc" id="L15">public class Project {</span>
+	public int id;
+	public int owner_id;
+	public String title;
+	public String time_submitted;
+	@JsonProperty(&quot;type&quot;)
+	public String project_type;
+	public ArrayList&lt;Skill&gt; jobs;
+	public String preview_description;
+	public String educationalStatus;
+	public double fIndex;
+	public double fkglIndex;
+	public String seo_url;
+
+	 /**
+     * This method gets the getFIndex
+     */
+	public double getFIndex() {
+<span class="fc" id="L33">		return this.fIndex;</span>
+	}
+	
+	 /**
+	 *@param fIndex
+     * This method sets the getFIndex
+     */
+	
+	public void setFIndex(Integer fIndex) {
+<span class="fc" id="L42">		this.fIndex = fIndex;</span>
+<span class="fc" id="L43">	}</span>
+	/**
+    * This method gets the getEducationalStatus
+    */
+	public String getEducationalStatus() {
+<span class="fc" id="L48">		return this.educationalStatus;</span>
+	}
+
+	 /**
+     * This method sets the educationalstatus on basis of preview_description
+     * 
+     * @param preview_description searched keyword
+     */
+	public void setEducationalStatus(String preview_description) {
+<span class="fc" id="L57">		int fIndex = (int)SearchHelper.getFindex(preview_description);</span>
+<span class="fc" id="L58">		this.educationalStatus = SearchHelper.educationalLevelMapper(fIndex);</span>
+<span class="fc" id="L59">	}</span>
+
+	SearchHelper projectSearcher;
+	/**
+	* This method gets the id
+	*/
+	public int getId() {
+<span class="fc" id="L66">		return id;</span>
+	}
+	/**
+	*@param id 
+	* This method set the id
+	*/
+	public void setId(int id) {
+<span class="fc" id="L73">		this.id = id;</span>
+<span class="fc" id="L74">	}</span>
+	
+	/**
+	* This method get Owner_id
+	*/
+	
+	public int getOwner_id() {
+<span class="fc" id="L81">		return owner_id;</span>
+	}
+	
+	/**
+	*@param owner_id 
+	* This method get Owner_id
+	*/
+	
+	public void setOwner_id(int owner_id) {
+<span class="fc" id="L90">		this.owner_id = owner_id;</span>
+<span class="fc" id="L91">	}</span>
+
+	/**
+	* This method get Title
+	*/
+	
+	public String getTitle() {
+<span class="fc" id="L98">		return title;</span>
+	}
+
+	/**
+	*@param title 
+	* This method set title
+	*/
+	public void setTitle(String title) {
+<span class="fc" id="L106">		this.title = title;</span>
+<span class="fc" id="L107">	}</span>
+	
+	/**
+	* This method get time
+	*/
+	public String getTime_submitted() {
+<span class="fc" id="L113">		return time_submitted;</span>
+	}
+
+	/**
+	 * @param time_submitted
+	* This method set time
+	*/
+	public void setTime_submitted(String time_submitted) {
+<span class="fc" id="L121">		this.time_submitted = time_submitted;</span>
+<span class="fc" id="L122">	}</span>
+
+	/**
+	* This method get time
+	*/
+	
+	public String getProject_type() {
+<span class="fc" id="L129">		return project_type;</span>
+	}
+
+	/**
+	* This method set Project_type
+	* @param project_type
+	*/
+	
+	
+	public void setProject_type(String project_type) {
+<span class="fc" id="L139">		this.project_type = project_type;</span>
+<span class="fc" id="L140">	}</span>
+
+	/**
+	* This method get skill		
+	*/
+	
+	public ArrayList&lt;Skill&gt; getSkills() {
+<span class="fc" id="L147">		return jobs;</span>
+	}
+
+	/**
+	* This method set skill
+	* @param jobs
+	*/
+	
+
+	
+	public void setSkills(ArrayList&lt;Skill&gt; jobs) {
+<span class="fc" id="L158">		this.jobs = jobs;</span>
+<span class="fc" id="L159">	}</span>
+
+	/**
+	* This method get Preview_description		
+	*/
+	public String getPreview_description() {
+<span class="fc" id="L165">		return preview_description;</span>
+	}
+
+	/**
+	* This method set preview description
+	* @param preview_description
+	*/
+
+	public void setPreview_description(String preview_description) {
+<span class="fc" id="L174">		this.preview_description = preview_description;</span>
+<span class="fc" id="L175">	}</span>
+	
+	/**
+	* This method getFkglIndex
+	*/
+	
+	public double getFkglIndex() {
+<span class="fc" id="L182">		return fkglIndex;</span>
+	}
+
+	/**
+	*@param  fkglIndex
+	* This method setFkglIndex
+	*/
+	
+	
+	public void setFkglIndex(double fkglIndex) {
+<span class="fc" id="L192">		this.fkglIndex = fkglIndex;</span>
+<span class="fc" id="L193">	}</span>
+
+	/**
+	* This method getSeo_url
+	*/
+	
+	public String getSeo_url() {
+<span class="fc" id="L200">		return seo_url;</span>
+	}
+	
+	/**
+	* This method setSeo_url
+	* @param seo_url 
+	*/
+
+	public void setSeo_url(String seo_url) {
+<span class="fc" id="L209">		this.seo_url = seo_url;</span>
+<span class="fc" id="L210">	}</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

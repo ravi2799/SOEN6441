@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>RestfulService.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">models</a> &gt; <span class="el_source">RestfulService.java</span></div><h1>RestfulService.java</h1><pre class="source lang-java linenums">package models;
+
+import play.libs.ws.*;
+import play.mvc.Http;
+
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.CompletionStage;
+import java.util.concurrent.TimeUnit;
+import javax.inject.Inject;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.stream.Collectors;
+import play.api.http.HeaderNames.*;
+import controllers.HomeController;
+
+import java.util.*;
+import java.util.concurrent.CompletableFuture;
+import javax.inject.Inject;
+
+/**
+ * @author Arvind Sangwan, Geetika, Shaurya, Raviraj
+ * @version 1.0
+ */
+public class RestfulService {
+
+    private final WSClient ws;
+
+    @Inject
+<span class="fc" id="L31">    public RestfulService(WSClient ws) {</span>
+<span class="fc" id="L32">        this.ws = ws;</span>
+<span class="fc" id="L33">    }</span>
+
+
+    /**
+     * This method return the list of projects  on basis of searched keyword id
+     * 
+     * @param searchKeyWord searched keyword
+     * @return list of projects on basis of searchKeyWord
+     */
+
+    public CompletableFuture&lt;JsonNode&gt; searchProjectKeyword(String searchKeyWord) {
+<span class="fc" id="L44">        String url_for_request = &quot;https://www.freelancer.com/api/projects/0.1/projects/active&quot;;</span>
+<span class="fc" id="L45">        CompletableFuture&lt;JsonNode&gt; data = ws.url(url_for_request)</span>
+<span class="fc" id="L46">                .addHeader(&quot;freelancer-oauth-v1&quot;, &quot;i3CkNWAKpUmgx8pGKHnlXTRfz2QWBO&quot;)</span>
+<span class="fc" id="L47">                .addQueryParameter(&quot;limit&quot;, &quot;10&quot;)</span>
+<span class="fc" id="L48">                .addQueryParameter(&quot;sort_field&quot;, &quot;time_submitted&quot;)</span>
+<span class="fc" id="L49">                .addQueryParameter(&quot;job_details&quot;, &quot;true&quot;)</span>
+<span class="fc" id="L50">                .addQueryParameter(&quot;query&quot;, String.valueOf(searchKeyWord))</span>
+                // .addQueryParameter(&quot;job_details&quot;, &quot;true&quot;)
+<span class="fc" id="L52">                .get().thenApplyAsync(WSResponse::asJson).toCompletableFuture();</span>
+<span class="fc" id="L53">        return data;</span>
+    }
+    
+    /**
+     * This method returns the list of projects on the basis of skills
+     * 
+     * @param skillsID - Id of skill for list of projects
+     * @return list of projects on basis of skillsID
+     */
+    public CompletableFuture&lt;JsonNode&gt; getProjectsBySkills(String skillsID) {
+<span class="fc" id="L63">    	String url_for_request = &quot;https://wwww.freelancer.com/api/projects/0.1/projects/active&quot;;</span>
+<span class="fc" id="L64">    	CompletableFuture&lt;JsonNode&gt; data = ws.url(url_for_request)</span>
+<span class="fc" id="L65">                .addHeader(&quot;freelancer-oauth-v1&quot;, &quot;i3CkNWAKpUmgx8pGKHnlXTRfz2QWBO&quot;)</span>
+<span class="fc" id="L66">    			.addQueryParameter(&quot;job_details&quot;, &quot;true&quot;)</span>
+<span class="fc" id="L67">    			.addQueryParameter(&quot;limit&quot;, &quot;10&quot;)</span>
+<span class="fc" id="L68">                .addQueryParameter(&quot;sort_field&quot;, &quot;time_submitted&quot;)</span>
+<span class="fc" id="L69">                .addQueryParameter(&quot;jobs[]&quot;, skillsID)</span>
+<span class="fc" id="L70">                .get().thenApplyAsync(WSResponse::asJson).toCompletableFuture();</span>
+<span class="fc" id="L71">        return data;</span>
+    }
+    
+    /**
+     * This method return the employer information  on basis of owner ID
+     * 
+     * @param ownerID Owner ID of the employer
+     * @return employer information on the basis of owner ID
+     */
+    public  CompletableFuture&lt;JsonNode&gt; getEmployerInfo(String ownerID) {
+<span class="fc" id="L81">	    String url_for_request = &quot;https://www.freelancer.com/api/users/0.1/users/&quot;+ownerID;</span>
+<span class="fc" id="L82">	        CompletableFuture&lt;JsonNode&gt; data = ws.url(url_for_request)</span>
+<span class="fc" id="L83">	                .addHeader(&quot;freelancer-oauth-v1&quot;, &quot;i3CkNWAKpUmgx8pGKHnlXTRfz2QWBO&quot;)</span>
+<span class="fc" id="L84">	                .addQueryParameter(&quot;limit&quot;, &quot;10&quot;)</span>
+<span class="fc" id="L85">	                .get().thenApplyAsync(WSResponse::asJson).toCompletableFuture();</span>
+<span class="fc" id="L86">	        return data;</span>
+
+	}
+    /**
+     * This method return the employer's 10 maximum projects  on basis of owner ID
+     * 
+     * @param ownerID Owner ID of the employer
+     * @return employer projects on the basis of owner ID
+     */
+	public CompletableFuture&lt;JsonNode&gt; getEmployerProjectInfo(String ownerID) {
+
+<span class="fc" id="L97">		String url = &quot;https://www.freelancer.com/api/projects/0.1/projects&quot;;</span>
+		
+<span class="fc" id="L99">		return ws.url(url)</span>
+<span class="fc" id="L100">				.addHeader(&quot;freelancer-oauth-v1&quot;, &quot;i3CkNWAKpUmgx8pGKHnlXTRfz2QWBO&quot;)</span>
+<span class="fc" id="L101">				.addQueryParameter(&quot;owners[]&quot;, String.valueOf(ownerID))</span>
+<span class="fc" id="L102">				.addQueryParameter(&quot;sort_field&quot;, &quot;time_updated&quot;)</span>
+<span class="fc" id="L103">				.addQueryParameter(&quot;limit&quot;, &quot;10&quot;)</span>
+<span class="fc" id="L104">				.get()</span>
+<span class="fc" id="L105">				.thenApplyAsync(WSResponse::asJson)</span>
+<span class="fc" id="L106">				.toCompletableFuture();</span>
+	}
+    
+    /**
+     * This method return the String in completable future form
+     * @param keyWord preview description
+     * @return String 
+     */
+
+    public CompletableFuture&lt;String&gt; try_(String keyWord){
+<span class="fc" id="L116">        return CompletableFuture.supplyAsync(( ) -&gt; {</span>
+        String data = keyWord;
+        return data;
+        });
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

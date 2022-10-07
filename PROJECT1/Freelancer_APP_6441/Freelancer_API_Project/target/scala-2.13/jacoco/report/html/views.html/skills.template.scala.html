@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>skills.template.scala</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=2;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Jacoco Coverage Report</a> &gt; <a href="index.source.html" class="el_package">views.html</a> &gt; <span class="el_source">skills.template.scala</span></div><h1>skills.template.scala</h1><pre class="source lang-java linenums">
+package views.html
+
+import _root_.play.twirl.api.TwirlFeatureImports._
+import _root_.play.twirl.api.TwirlHelperImports._
+import _root_.play.twirl.api.Html
+import _root_.play.twirl.api.JavaScript
+import _root_.play.twirl.api.Txt
+import _root_.play.twirl.api.Xml
+import models._
+import controllers._
+import play.api.i18n._
+import views.html._
+import play.api.templates.PlayMagic._
+import java.lang._
+import java.util._
+import play.core.j.PlayMagicForJava._
+import play.mvc._
+import play.api.data.Field
+import play.data._
+import play.core.j.PlayFormsMagicForJava._
+import scala.jdk.CollectionConverters._
+/*1.2*/import java.util
+/*2.2*/import wrapper.Project
+
+<span class="pc" id="L26">object skills extends _root_.play.twirl.api.BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,_root_.play.twirl.api.Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with _root_.play.twirl.api.Template5[List[wrapper.Project],String,HashMap[String, List[wrapper.Project]],HashMap[String, List[wrapper.Project]],String,play.twirl.api.HtmlFormat.Appendable] {</span>
+
+  /**/
+  def apply/*4.2*/(searchResult: List[wrapper.Project], searchedKeyword: String, cacheData: HashMap[String, List[wrapper.Project]], projectDataMap: HashMap[String, List[wrapper.Project]], globalPreviewDesc:String):play.twirl.api.HtmlFormat.Appendable = {
+<span class="fc" id="L30">    _display_ {</span>
+      {
+
+
+<span class="fc" id="L34">Seq[Any](format.raw/*4.197*/(&quot;&quot;&quot;</span>
+
+
+<span class="fc" id="L37">&quot;&quot;&quot;),format.raw/*7.1*/(&quot;&quot;&quot;&lt;html lang=&quot;en&quot;&gt;</span>
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;style&gt;
+<span class="fc" id="L43">.container&quot;&quot;&quot;),format.raw/*13.11*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*13.12*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L44">&quot;&quot;&quot;),format.raw/*14.1*/(&quot;&quot;&quot;margin-top:4em;</span>
+<span class="fc" id="L45">&quot;&quot;&quot;),format.raw/*15.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*15.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L46">&quot;&quot;&quot;),format.raw/*16.1*/(&quot;&quot;&quot;.ml-2&quot;&quot;&quot;),format.raw/*16.6*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*16.7*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L47">    &quot;&quot;&quot;),format.raw/*17.5*/(&quot;&quot;&quot;margin-left: 1em;</span>
+<span class="fc" id="L48">&quot;&quot;&quot;),format.raw/*18.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*18.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L49">&quot;&quot;&quot;),format.raw/*19.1*/(&quot;&quot;&quot;.flex__row&quot;&quot;&quot;),format.raw/*19.11*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*19.12*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L50">&quot;&quot;&quot;),format.raw/*20.1*/(&quot;&quot;&quot;display: flex;</span>
+justify-content:center;
+align-items:center;
+<span class="fc" id="L53">&quot;&quot;&quot;),format.raw/*23.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*23.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L54">&quot;&quot;&quot;),format.raw/*24.1*/(&quot;&quot;&quot;.search__field&quot;&quot;&quot;),format.raw/*24.15*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*24.16*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L55">&quot;&quot;&quot;),format.raw/*25.1*/(&quot;&quot;&quot;padding:3px;</span>
+outline: none;
+outline-width:none;
+min-width: 20em;
+min-height: 3em;
+<span class="fc" id="L60">&quot;&quot;&quot;),format.raw/*30.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*30.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L61">&quot;&quot;&quot;),format.raw/*31.1*/(&quot;&quot;&quot;.search__btn&quot;&quot;&quot;),format.raw/*31.13*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*31.14*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L62">&quot;&quot;&quot;),format.raw/*32.1*/(&quot;&quot;&quot;padding:5px;</span>
+margin-left:1em;
+width:10em;
+height: 2em;
+border-radius: 1em;
+color: #fff;
+background-color: #2196f3eb;
+font-weight: 600;
+<span class="fc" id="L70">&quot;&quot;&quot;),format.raw/*40.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*40.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L71">&quot;&quot;&quot;),format.raw/*41.1*/(&quot;&quot;&quot;.flex__row__project&quot;&quot;&quot;),format.raw/*41.20*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*41.21*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L72">&quot;&quot;&quot;),format.raw/*42.1*/(&quot;&quot;&quot;display: flex;</span>
+justify-content:flex-start;
+
+<span class="fc" id="L75">&quot;&quot;&quot;),format.raw/*45.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*45.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L76">&quot;&quot;&quot;),format.raw/*46.1*/(&quot;&quot;&quot;.mt-3&quot;&quot;&quot;),format.raw/*46.6*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*46.7*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L77">    &quot;&quot;&quot;),format.raw/*47.5*/(&quot;&quot;&quot;margin-top: 2em;</span>
+<span class="fc" id="L78">&quot;&quot;&quot;),format.raw/*48.1*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*48.2*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L79">&quot;&quot;&quot;),format.raw/*49.1*/(&quot;&quot;&quot;&lt;/style&gt;</span>
+&lt;style&gt;
+           
+
+<span class="fc" id="L83">            body &quot;&quot;&quot;),format.raw/*53.18*/(&quot;&quot;&quot;{&quot;&quot;&quot;),format.raw/*53.19*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L84">                &quot;&quot;&quot;),format.raw/*54.17*/(&quot;&quot;&quot;background-color: #e7e7e7;</span>
+<span class="fc" id="L85">            &quot;&quot;&quot;),format.raw/*55.13*/(&quot;&quot;&quot;}&quot;&quot;&quot;),format.raw/*55.14*/(&quot;&quot;&quot;</span>
+            
+<span class="fc" id="L87">    &quot;&quot;&quot;),format.raw/*57.5*/(&quot;&quot;&quot;&lt;/style&gt;</span>
+&lt;body&gt;
+    &lt;form method=&quot;GET&quot; action=&quot;/SearchPage&quot;&gt;
+        &lt;div class=&quot;flex__row container&quot;&gt;
+            &lt;input name=&quot;keyword&quot; id=&quot;search__text&quot; class=&quot;search__field&quot; placeholder=&quot;Enter Search items&quot;&gt;&lt;/input&gt;
+            &lt;button  type=&quot;submit&quot;  class=&quot;search__btn&quot;&gt;GO!&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/form&gt;
+
+
+    &lt;div class=&quot;layout-container&quot;&gt;
+        &lt;div class=&quot;container-fluid&quot;&gt;
+<span class="pc bpc" id="L99" title="1 of 4 branches missed.">        &quot;&quot;&quot;),_display_(/*69.10*/if(searchResult != null &amp;&amp; searchResult.size &gt; 0)/*69.59*/{_display_(Seq[Any](format.raw/*69.60*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L100">            &quot;&quot;&quot;),_display_(/*70.14*/for( (keyword, projectList:List[Project]) &lt;- cacheData ) yield /*70.70*/{_display_(Seq[Any](format.raw/*70.71*/(&quot;&quot;&quot;</span>
+                &quot;&quot;&quot;),_display_(/*71.18*/if(keyword == searchedKeyword)/*71.48*/{_display_(Seq[Any](format.raw/*71.49*/(&quot;&quot;&quot;
+                    &quot;&quot;&quot;),format.raw/*72.21*/(&quot;&quot;&quot;&lt;span&gt;Search term is: &quot;&quot;&quot;),_display_(/*72.44*/keyword),format.raw/*72.51*/(&quot;&quot;&quot;  &quot;&quot;&quot;),format.raw/*72.53*/(&quot;&quot;&quot;Findex:&quot;&quot;&quot;),_display_(/*72.61*/{projectList.map(_.fIndex).sum/searchResult.size()}),format.raw/*72.112*/(&quot;&quot;&quot;  &quot;&quot;&quot;),format.raw/*72.114*/(&quot;&quot;&quot;FKGL:&quot;&quot;&quot;),_display_(/*72.120*/{projectList.map(_.fkglIndex).sum/searchResult.size()}),format.raw/*72.174*/(&quot;&quot;&quot; &quot;&quot;&quot;),format.raw/*72.175*/(&quot;&quot;&quot;&lt;a class=&quot;ml-2&quot; href=&quot;/GlobalStatistics/&quot;&quot;&quot;),_display_(/*72.216*/searchedKeyword),format.raw/*72.231*/(&quot;&quot;&quot;&quot;&gt;GlobalStats&lt;/a&gt;&lt;/span&gt;
+                    
+                &quot;&quot;&quot;),_display_(/*74.18*/for((project,index) &lt;- (projectList.zipWithIndex).reverse) yield /*74.76*/ {_display_(Seq[Any](format.raw/*74.78*/(&quot;&quot;&quot;
+                &quot;&quot;&quot;),format.raw/*75.17*/(&quot;&quot;&quot;&lt;div class=&quot;flex__row__project&quot;&gt;
+                    
+                    &quot;&quot;&quot;),_display_(/*77.22*/{-(index-searchResult.size)}),format.raw/*77.50*/(&quot;&quot;&quot;. &lt;a class=&quot;ml-2&quot; href=&quot;/owner_id/&quot;&quot;&quot;),_display_(/*77.85*/project/*77.92*/.owner_id),format.raw/*77.101*/(&quot;&quot;&quot;&quot;&gt;Owner ID &lt;/a&gt;
+                    &lt;span class=&quot;ml-2&quot;&gt;&quot;&quot;&quot;),_display_(/*78.41*/project/*78.48*/.time_submitted),format.raw/*78.63*/(&quot;&quot;&quot;&lt;/span&gt;
+                    &lt;span class=&quot;ml-2&quot;&gt;&lt;a href=&quot;https://www.freelancer.com/projects/&quot;&quot;&quot;),_display_(/*79.86*/project/*79.93*/.seo_url),format.raw/*79.101*/(&quot;&quot;&quot;?w=f&amp;ngsw-bypass=&quot; target=&quot;_blank&quot;&gt;&quot;&quot;&quot;),_display_(/*79.137*/project/*79.144*/.title),format.raw/*79.150*/(&quot;&quot;&quot;&lt;/a&gt;
+                    &lt;/span&gt;
+                    &lt;span class=&quot;ml-2&quot;&gt;type:&quot;&quot;&quot;),_display_(/*81.46*/project/*81.53*/.project_type),format.raw/*81.66*/(&quot;&quot;&quot;&lt;/span&gt;
+                    
+                    &lt;span class=&quot;ml-2&quot;&gt;Educational Level: &quot;&quot;&quot;),_display_(/*83.60*/project/*83.67*/.educationalStatus),format.raw/*83.85*/(&quot;&quot;&quot;&lt;/span&gt;
+		            &lt;span class=&quot;ml-2&quot;&gt; &lt;a class=&quot;ml-2&quot; href=&quot;/LocalStatistics/&quot;&quot;&quot;),_display_(/*84.75*/searchedKeyword),format.raw/*84.90*/(&quot;&quot;&quot;/&quot;&quot;&quot;),_display_(/*84.92*/project/*84.99*/.id),format.raw/*84.102*/(&quot;&quot;&quot;&quot;&gt;LocalStats&lt;/a&gt;&lt;/span&gt;
+                    &lt;span class=&quot;ml-2&quot;&gt;Findex: &quot;&quot;&quot;),_display_(/*85.49*/project/*85.56*/.fIndex),format.raw/*85.63*/(&quot;&quot;&quot;&lt;/span&gt;
+                    &lt;span class=&quot;ml-2&quot;&gt;Skills: &lt;/span&gt;
+                        &quot;&quot;&quot;),_display_(/*87.26*/for(skill &lt;- (project.jobs)) yield /*87.54*/ {_display_(Seq[Any](format.raw/*87.56*/(&quot;&quot;&quot;
+                            &quot;&quot;&quot;),format.raw/*88.29*/(&quot;&quot;&quot;&lt;a href =&quot;/projectsBySkill?skillsName=&quot;&quot;&quot;),_display_(/*88.68*/skill/*88.73*/.name),format.raw/*88.78*/(&quot;&quot;&quot;&amp;skillsID=&quot;&quot;&quot;),_display_(/*88.89*/skill/*88.94*/.id),format.raw/*88.97*/(&quot;&quot;&quot;&quot; class=&quot;ml-2&quot;&gt;&quot;&quot;&quot;),_display_(/*88.113*/skill/*88.118*/.name),format.raw/*88.123*/(&quot;&quot;&quot;&lt;/a&gt;
+                        &quot;&quot;&quot;)))}),format.raw/*89.26*/(&quot;&quot;&quot;
+		
+                &quot;&quot;&quot;),format.raw/*91.17*/(&quot;&quot;&quot;&lt;/div&gt;
+            &quot;&quot;&quot;)))}),format.raw/*92.14*/(&quot;&quot;&quot;
+                &quot;&quot;&quot;)))}),format.raw/*93.18*/(&quot;&quot;&quot;
+                
+<span class="fc" id="L125">            &quot;&quot;&quot;)))}),format.raw/*95.14*/(&quot;&quot;&quot;</span>
+           
+<span class="fc" id="L127">        &quot;&quot;&quot;)))}),format.raw/*97.10*/(&quot;&quot;&quot;</span>
+<span class="fc" id="L128">&quot;&quot;&quot;),format.raw/*98.1*/(&quot;&quot;&quot;&lt;/div&gt;</span>
+    
+        &lt;div id=&quot;cacheContent&quot;&gt;
+        &lt;/div&gt;&lt;/div&gt;
+   
+&lt;/body&gt;
+&lt;/html&gt;&quot;&quot;&quot;))
+      }
+    }
+  }
+
+<span class="fc" id="L139">  def render(searchResult:List[wrapper.Project],searchedKeyword:String,cacheData:HashMap[String, List[wrapper.Project]],projectDataMap:HashMap[String, List[wrapper.Project]],globalPreviewDesc:String): play.twirl.api.HtmlFormat.Appendable = apply(searchResult,searchedKeyword,cacheData,projectDataMap,globalPreviewDesc)</span>
+
+<span class="nc" id="L141">  def f:((List[wrapper.Project],String,HashMap[String, List[wrapper.Project]],HashMap[String, List[wrapper.Project]],String) =&gt; play.twirl.api.HtmlFormat.Appendable) = (searchResult,searchedKeyword,cacheData,projectDataMap,globalPreviewDesc) =&gt; apply(searchResult,searchedKeyword,cacheData,projectDataMap,globalPreviewDesc)</span>
+
+<span class="nc" id="L143">  def ref: this.type = this</span>
+
+}
+
+
+              /*
+                  -- GENERATED --
+                  SOURCE: app/views/skills.scala.html
+                  HASH: 68d09ca937032db322a110fd9073e1916bbd0a40
+                  MATRIX: 610-&gt;1|634-&gt;20|1069-&gt;47|1360-&gt;242|1392-&gt;248|1528-&gt;356|1557-&gt;357|1586-&gt;359|1630-&gt;376|1658-&gt;377|1687-&gt;379|1719-&gt;384|1747-&gt;385|1780-&gt;391|1826-&gt;410|1854-&gt;411|1883-&gt;413|1921-&gt;423|1950-&gt;424|1979-&gt;426|2068-&gt;488|2096-&gt;489|2125-&gt;491|2167-&gt;505|2196-&gt;506|2225-&gt;508|2339-&gt;595|2367-&gt;596|2396-&gt;598|2436-&gt;610|2465-&gt;611|2494-&gt;613|2664-&gt;756|2692-&gt;757|2721-&gt;759|2768-&gt;778|2797-&gt;779|2826-&gt;781|2900-&gt;828|2928-&gt;829|2957-&gt;831|2989-&gt;836|3017-&gt;837|3050-&gt;843|3095-&gt;861|3123-&gt;862|3152-&gt;864|3231-&gt;915|3260-&gt;916|3306-&gt;934|3374-&gt;974|3403-&gt;975|3450-&gt;995|3888-&gt;1406|3946-&gt;1455|3985-&gt;1456|4027-&gt;1471|4099-&gt;1527|4138-&gt;1528|4184-&gt;1547|4223-&gt;1577|4262-&gt;1578|4312-&gt;1600|4362-&gt;1623|4390-&gt;1630|4420-&gt;1632|4455-&gt;1640|4528-&gt;1691|4559-&gt;1693|4593-&gt;1699|4669-&gt;1753|4699-&gt;1754|4768-&gt;1795|4805-&gt;1810|4897-&gt;1875|4971-&gt;1933|5011-&gt;1935|5057-&gt;1953|5161-&gt;2030|5210-&gt;2058|5272-&gt;2093|5288-&gt;2100|5319-&gt;2109|5403-&gt;2166|5419-&gt;2173|5455-&gt;2188|5576-&gt;2282|5592-&gt;2289|5622-&gt;2297|5686-&gt;2333|5703-&gt;2340|5731-&gt;2346|5838-&gt;2426|5854-&gt;2433|5888-&gt;2446|6005-&gt;2536|6021-&gt;2543|6060-&gt;2561|6170-&gt;2644|6206-&gt;2659|6235-&gt;2661|6251-&gt;2668|6276-&gt;2671|6376-&gt;2744|6392-&gt;2751|6420-&gt;2758|6537-&gt;2848|6581-&gt;2876|6621-&gt;2878|6679-&gt;2908|6745-&gt;2947|6759-&gt;2952|6785-&gt;2957|6823-&gt;2968|6837-&gt;2973|6861-&gt;2976|6905-&gt;2992|6920-&gt;2997|6947-&gt;3002|7009-&gt;3033|7059-&gt;3055|7111-&gt;3076|7161-&gt;3095|7225-&gt;3128|7280-&gt;3152|7309-&gt;3154
+                  LINES: 23-&gt;1|24-&gt;2|29-&gt;4|34-&gt;4|37-&gt;7|43-&gt;13|43-&gt;13|44-&gt;14|45-&gt;15|45-&gt;15|46-&gt;16|46-&gt;16|46-&gt;16|47-&gt;17|48-&gt;18|48-&gt;18|49-&gt;19|49-&gt;19|49-&gt;19|50-&gt;20|53-&gt;23|53-&gt;23|54-&gt;24|54-&gt;24|54-&gt;24|55-&gt;25|60-&gt;30|60-&gt;30|61-&gt;31|61-&gt;31|61-&gt;31|62-&gt;32|70-&gt;40|70-&gt;40|71-&gt;41|71-&gt;41|71-&gt;41|72-&gt;42|75-&gt;45|75-&gt;45|76-&gt;46|76-&gt;46|76-&gt;46|77-&gt;47|78-&gt;48|78-&gt;48|79-&gt;49|83-&gt;53|83-&gt;53|84-&gt;54|85-&gt;55|85-&gt;55|87-&gt;57|99-&gt;69|99-&gt;69|99-&gt;69|100-&gt;70|100-&gt;70|100-&gt;70|101-&gt;71|101-&gt;71|101-&gt;71|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|102-&gt;72|104-&gt;74|104-&gt;74|104-&gt;74|105-&gt;75|107-&gt;77|107-&gt;77|107-&gt;77|107-&gt;77|107-&gt;77|108-&gt;78|108-&gt;78|108-&gt;78|109-&gt;79|109-&gt;79|109-&gt;79|109-&gt;79|109-&gt;79|109-&gt;79|111-&gt;81|111-&gt;81|111-&gt;81|113-&gt;83|113-&gt;83|113-&gt;83|114-&gt;84|114-&gt;84|114-&gt;84|114-&gt;84|114-&gt;84|115-&gt;85|115-&gt;85|115-&gt;85|117-&gt;87|117-&gt;87|117-&gt;87|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|118-&gt;88|119-&gt;89|121-&gt;91|122-&gt;92|123-&gt;93|125-&gt;95|127-&gt;97|128-&gt;98
+                  -- GENERATED --
+              */
+          
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

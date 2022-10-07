@@ -1,0 +1,145 @@
+[0m[[0m[0mdebug[0m] [0m[0mjavaOptions: Vector(-Djacoco-agent.destfile=C:\Users\Shree\Desktop\MS\Assignment\SOEN 6441\PROJECT1\Freelancer_APP_6441\Freelancer_API_Project\target\scala-2.13\jacoco\data\jacoco.exec)[0m
+[0m[[0m[0mdebug[0m] [0m[0mForking tests - parallelism = false[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreate a single-thread test executor[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunner for com.novocode.junit.JUnitFramework produced 12 initial tasks for 12 tests.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(controllers.HomeControllerTest, sbt.ForkMain$AnnotatedFingerscan@1d38da8a, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_searchPage[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_searchPage[0m finished, took 11.912 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderStatesTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderStatesTemplate[0m finished, took 0.348 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtestIndex[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtestIndex[0m finished, took 0.486 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_projectBySkill[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_projectBySkill[0m finished, took 0.325 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderCommonTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderCommonTemplate[0m finished, took 0.224 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderSkillTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderSkillTemplate[0m finished, took 0.182 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_searchPage1[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_searchPage1[0m finished, took 0.248 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderIndexTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderIndexTemplate[0m finished, took 0.222 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderMainTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderMainTemplate[0m finished, took 0.161 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_owner_id[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_owner_id[0m finished, took 0.533 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtesttutorial[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtesttutorial[0m finished, took 0.194 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtestexplore[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtestexplore[0m finished, took 0.153 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_clearSession[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_clearSession[0m finished, took 0.191 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_Globalstats[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_Globalstats[0m finished, took 0.3 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderWelcomeTemplate[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderWelcomeTemplate[0m finished, took 0.127 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderSkillByIDTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mrenderSkillByIDTest[0m finished, took 0.692 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_Localstats[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest controllers.[33mHomeControllerTest[0m.[36mtest_Localstats[0m finished, took 0.163 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 17 total, 16.496s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 17 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(helper.EmployerInfoHelperTest, sbt.ForkMain$AnnotatedFingerscan@eb65c25, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mEmployerInfoHelperTest[0m.[36mtestgetEmployerProjectInfo[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mEmployerInfoHelperTest[0m.[36mtestgetEmployerProjectInfo[0m finished, took 1.347 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mEmployerInfoHelperTest[0m.[36mtestGetEmployerProfileInfo[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mEmployerInfoHelperTest[0m.[36mtestGetEmployerProfileInfo[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 2 total, 1.349s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(helper.ProjectSearchTest, sbt.ForkMain$AnnotatedFingerscan@67e221e9, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mProjectSearchTest[0m.[36msearchProjectsBySkillsTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mProjectSearchTest[0m.[36msearchProjectsBySkillsTest[0m finished, took 0.009 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.012s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(models.RestfulServiceTest, sbt.ForkMain$AnnotatedFingerscan@532682a2, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest models.[33mRestfulServiceTest[0m.[36mtry_[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest models.[33mRestfulServiceTest[0m.[36mtry_[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.002s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.SkillTest, sbt.ForkMain$AnnotatedFingerscan@124af405, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mSkillTest[0m.[36mtestSkill[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mSkillTest[0m.[36mtestSkill[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.001s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.ProjectTest, sbt.ForkMain$AnnotatedFingerscan@18a1a8b1, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectTest[0m.[36mtest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectTest[0m.[36mtest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.001s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.ProjectResultsTest, sbt.ForkMain$AnnotatedFingerscan@698b9a2f, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectResultsTest[0m.[36mtest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectResultsTest[0m.[36mtest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.002s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.EmployerInfoWrapperTest, sbt.ForkMain$AnnotatedFingerscan@1cafa779, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mEmployerInfoWrapperTest[0m.[36mtestEmployerPojo[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mEmployerInfoWrapperTest[0m.[36mtestEmployerPojo[0m finished, took 0.046 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.046s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(helper.SearchHelperTest, sbt.ForkMain$AnnotatedFingerscan@7c44d9d5, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetFKglIndex[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetFKglIndex[0m finished, took 0.03 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mglobal_test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mglobal_test[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36meducationalLevelMapperTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36meducationalLevelMapperTest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetIndexTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetIndexTest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetSentencesTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetSentencesTest[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mget___data[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mget___data[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetWordsTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mgetWordsTest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mlocal_test[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mSearchHelperTest[0m.[36mlocal_test[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 8 total, 0.037s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 8 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(helper.StatisticsHelperTest, sbt.ForkMain$AnnotatedFingerscan@12992ac4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mStatisticsHelperTest[0m.[36mtestGlobalstats[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mStatisticsHelperTest[0m.[36mtestGlobalstats[0m finished, took 0.002 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mStatisticsHelperTest[0m.[36mtestlocalstats[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest helper.[33mStatisticsHelperTest[0m.[36mtestlocalstats[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 2 total, 0.005s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.ProjectInfoWrapperTest, sbt.ForkMain$AnnotatedFingerscan@47329818, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectInfoWrapperTest[0m.[36mtest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectInfoWrapperTest[0m.[36mtest[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 1 total, 0.001s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 1 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0m  Running TaskDef(wrapper.ProjectsInfoListTest, sbt.ForkMain$AnnotatedFingerscan@7e20d36e, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run started[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36mtest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36mtest[0m finished, took 0.001 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36minfoListTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36minfoListTest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36mgetProjectsListTest[0m started[0m
+[0m[[0m[0mdebug[0m] [0m[0mTest wrapper.[33mProjectsInfoListTest[0m.[36mgetProjectsListTest[0m finished, took 0.0 sec[0m
+[0m[[0m[0mdebug[0m] [0m[0m[34mTest run finished: [0m[34m0 failed[0m[34m, [0m[34m0 ignored[0m[34m, 3 total, 0.003s[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0m    Produced 0 nested tasks and 3 events.[0m
+[0m[[0m[0mdebug[0m] [0m[0mSummary for JUnit not available.[0m
+[0m[[0m[0minfo[0m] [0m[0mPassed: Total 39, Failed 0, Errors 0, Passed 39[0m
+[0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	controllers.HomeControllerTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helper.EmployerInfoHelperTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helper.ProjectSearchTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	models.RestfulServiceTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.SkillTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.ProjectTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.ProjectResultsTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.EmployerInfoWrapperTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helper.SearchHelperTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	helper.StatisticsHelperTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.ProjectInfoWrapperTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	wrapper.ProjectsInfoListTest[0m

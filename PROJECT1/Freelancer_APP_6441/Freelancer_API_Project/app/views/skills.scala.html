@@ -1,0 +1,104 @@
+@import java.util
+@import wrapper.Project
+
+@(searchResult: List[wrapper.Project], searchedKeyword: String, cacheData: HashMap[String, List[wrapper.Project]], projectDataMap: HashMap[String, List[wrapper.Project]], globalPreviewDesc:String)
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+.container{
+margin-top:4em;
+}
+.ml-2{
+    margin-left: 1em;
+}
+.flex__row{
+display: flex;
+justify-content:center;
+align-items:center;
+}
+.search__field{
+padding:3px;
+outline: none;
+outline-width:none;
+min-width: 20em;
+min-height: 3em;
+}
+.search__btn{
+padding:5px;
+margin-left:1em;
+width:10em;
+height: 2em;
+border-radius: 1em;
+color: #fff;
+background-color: #2196f3eb;
+font-weight: 600;
+}
+.flex__row__project{
+display: flex;
+justify-content:flex-start;
+
+}
+.mt-3{
+    margin-top: 2em;
+}
+</style>
+<style>
+           
+
+            body {
+                background-color: #e7e7e7;
+            }
+            
+    </style>
+<body>
+    <form method="GET" action="/SearchPage">
+        <div class="flex__row container">
+            <input name="keyword" id="search__text" class="search__field" placeholder="Enter Search items"></input>
+            <button  type="submit"  class="search__btn">GO!</button>
+        </div>
+    </form>
+
+
+    <div class="layout-container">
+        <div class="container-fluid">
+        @if(searchResult != null && searchResult.size > 0){
+            @for( (keyword, projectList:List[Project]) <- cacheData ){
+                @if(keyword == searchedKeyword){
+                    <span>Search term is: @keyword  Findex:@{projectList.map(_.fIndex).sum/searchResult.size()}  FKGL:@{projectList.map(_.fkglIndex).sum/searchResult.size()} <a class="ml-2" href="/GlobalStatistics/@searchedKeyword">GlobalStats</a></span>
+                    
+                @for((project,index) <- (projectList.zipWithIndex).reverse) {
+                <div class="flex__row__project">
+                    
+                    @{-(index-searchResult.size)}. <a class="ml-2" href="/owner_id/@project.owner_id">Owner ID </a>
+                    <span class="ml-2">@project.time_submitted</span>
+                    <span class="ml-2"><a href="https://www.freelancer.com/projects/@project.seo_url?w=f&ngsw-bypass=" target="_blank">@project.title</a>
+                    </span>
+                    <span class="ml-2">type:@project.project_type</span>
+                    
+                    <span class="ml-2">Educational Level: @project.educationalStatus</span>
+		            <span class="ml-2"> <a class="ml-2" href="/LocalStatistics/@searchedKeyword/@project.id">LocalStats</a></span>
+                    <span class="ml-2">Findex: @project.fIndex</span>
+                    <span class="ml-2">Skills: </span>
+                        @for(skill <- (project.jobs)) {
+                            <a href ="/projectsBySkill?skillsName=@skill.name&skillsID=@skill.id" class="ml-2">@skill.name</a>
+                        }
+		
+                </div>
+            }
+                }
+                
+            }
+           
+        }
+</div>
+    
+        <div id="cacheContent">
+        </div></div>
+   
+</body>
+</html>

@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c966edb4-fece-4681-b7b1-842a5a52739e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_cache_2_13_2_8_13_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__com_typesafe_play_play_ehcache_2_13_2_8_13_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_bytebuddy_byte_buddy_1_12_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_bytebuddy_byte_buddy_agent_1_12_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__net_sf_ehcache_ehcache_2_10_9_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_ehcache_jcache_1_0_1_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_jacoco_org_jacoco_agent_0_8_7_runtime_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_mockito_mockito_core_4_1_0_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sbt__org_objenesis_objenesis_3_2_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/helper/EmployerInfoHelperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/sbt__net_bytebuddy_byte_buddy_1_8_15_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/freelancer-play-soen-6441-project-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/freelancer-play-soen-6441-project-build.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/freelancer-play-soen-6441-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/freelancer-play-soen-6441-project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/landingPage.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/landingPage.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/application.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/.history" beforeDir="false" afterPath="$PROJECT_DIR$/target/.history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/$model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/ReverseRoutes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/javascript/JavaScriptReverseRoutes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes$javascript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/controllers/routes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/Routes.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/router/RoutesPrefix.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/$model__camel$/form.scala.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/landingPage$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/html/landingPage$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/classes/views/landingPage.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/classes/views/landingPage.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/controllers/$model.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/controllers/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/controllers/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/controllers/HomeControllerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/helper/SearchHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/views/html/landingPage$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/views/html/landingPage$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/views/html/landingPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/views/html/landingPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_account_balances.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_administrative_area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_administrative_area_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_avatar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_avatar_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_avatar_large.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_avatar_large_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_badges.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_bid_quality_details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_corporate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_corporate_users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_cover_image.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_date_of_birth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_demonym.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_deposit_made.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_deposit_methods.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_directory_follow_preferences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_email.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_employer_reputation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_endorsements.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_enterprise_ids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_enterprise_metadata_values.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_equipment_groups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_facebook_connected.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_first_name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_flag_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_flag_url_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_force_verify.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_freelancer_verified_status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_freelancer_verified_user.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_full_address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_grants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_highres_flag_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_highres_flag_url_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_identity_verified.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_active.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_escrowcom_supported.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_external.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_local.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_nominated_payment_controlled.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_nominated_payment_share_setup_complete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_is_payment_confirmation_required.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_iso3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_jobs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_language_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_language_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_last_name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_latitude.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_linkedin_connected.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_longitude.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_marketing_mobile_number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_membership_package.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_mfa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_mobile_tracking.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_online_offline_status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_operating_areas.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_payment_verified.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_phone_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_phone_verified.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_pool_ids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_portfolio_count.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_postal_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_preferred_freelancer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_primary_currency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_profile_complete.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_profile_description.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_qualifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_recommendations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_region_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_reputation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_responsiveness.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_sanction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_search_languages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_secure_phone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_seo_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_spam_profile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_support_status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_suspended.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_tagline.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_test_user.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_timezone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_true_location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_user_sanctions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData$cls_vicinity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployeeBioData.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/EmployerProfileInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_active_prepaid_milestone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_administrative_area.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_administrative_area_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_assisted.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_attachments.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_bid_stats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_billing_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_budget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_can_post_review.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_city.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_client_engagement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_contract_signatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_currency.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_currency_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_deloitte_details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_demonym.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_description.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_drive_files.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_enterprise_ids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_enterprise_linked_projects_details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_enterprise_metadata_values.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_equipment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_equipment_groups.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_extend.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_files.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_flag_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_flag_url_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_from_user_location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_full_address.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_highres_flag_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_highres_flag_url_cdn.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_hireme_initial_bid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_hourly_project_info.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_invited_freelancers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_iso3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_jobs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_language_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_language_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_latitude.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_listed.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_local_details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_longitude.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_name.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_nda_details.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_nda_signatures.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_nda_signatures_new.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_negotiated_bid.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_phone_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_postal_code.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_project_collaborations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_project_reject_reason.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_project_source.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_project_source_reference.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_project_type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_projects.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_qualifications.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_quotation_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_quotation_version_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_recommended_freelancers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_recruiter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_region_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_repost_id.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_sanction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_selected_bids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_seo_url.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_success_bundle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_support_sessions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_time_updated.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_timeframe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_total_count.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_track_ids.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_true_location.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_unpaid_recruiter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_upgrades.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_user_distance.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_users.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo$cls_vicinity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectEmployeeInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/ProjectResults.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/instrumented-classes/wrapper/SkillTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/$model.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/HomeController.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/HomeController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/HomeController.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/HomeController.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/controllers/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper$1.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper$1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper$2.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper$2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/SearchHelper.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/helper/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage$.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage$.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage.template.scala.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/views.html/landingPage.template.scala.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_account_balances.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_administrative_area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_administrative_area_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_avatar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_avatar_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_avatar_large.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_avatar_large_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_badges.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_bid_quality_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_corporate.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_corporate_users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_country.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_cover_image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_date_of_birth.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_demonym.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_deposit_made.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_deposit_methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_directory_follow_preferences.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_employer_reputation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_endorsements.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_enterprise_ids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_enterprise_metadata_values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_equipment_groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_facebook_connected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_first_name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_flag_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_flag_url_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_force_verify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_freelancer_verified_status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_freelancer_verified_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_full_address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_grants.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_highres_flag_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_highres_flag_url_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_identity_verified.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_active.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_escrowcom_supported.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_external.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_local.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_nominated_payment_controlled.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_nominated_payment_share_setup_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_is_payment_confirmation_required.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_iso3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_jobs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_language_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_language_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_last_name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_latitude.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_linkedin_connected.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_longitude.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_marketing_mobile_number.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_membership_package.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_mfa.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_mobile_tracking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_online_offline_status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_operating_areas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_payment_verified.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_person.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_phone_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_phone_verified.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_pool_ids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_portfolio_count.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_postal_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_preferred_freelancer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_primary_currency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_profile_complete.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_profile_description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_qualifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_recommendations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_region_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_reputation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_responsiveness.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_sanction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_search_languages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_secure_phone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_seo_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_spam_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_support_status.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_suspended.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_tagline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_test_user.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_timezone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_true_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_user_sanctions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData$cls_vicinity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployeeBioData.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployerProfileInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/EmployerProfileInfo.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_active_prepaid_milestone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_administrative_area.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_administrative_area_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_assisted.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_attachments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_bid_stats.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_billing_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_budget.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_can_post_review.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_city.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_client_engagement.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_contract_signatures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_country.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_currency.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_currency_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_deloitte_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_demonym.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_drive_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_enterprise_ids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_enterprise_linked_projects_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_enterprise_metadata_values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_equipment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_equipment_groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_extend.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_files.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_flag_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_flag_url_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_from_user_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_full_address.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_highres_flag_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_highres_flag_url_cdn.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_hireme_initial_bid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_hourly_project_info.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_invited_freelancers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_iso3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_jobs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_language_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_language_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_latitude.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_listed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_local_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_longitude.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_name.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_nda_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_nda_signatures.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_nda_signatures_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_negotiated_bid.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_person.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_phone_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_postal_code.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_project_collaborations.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_project_reject_reason.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_project_source.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_project_source_reference.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_project_type.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_projects.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_qualifications.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_quotation_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_quotation_version_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_recommended_freelancers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_recruiter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_region_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_repost_id.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_result.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_sanction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_selected_bids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_seo_url.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_success_bundle.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_support_sessions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_time_updated.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_timeframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_total_count.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_track_ids.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_true_location.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_unpaid_recruiter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_upgrades.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_user_distance.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_users.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo$cls_vicinity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectEmployeeInfo.java.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectResults.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectResults.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectResults.java.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/ProjectResults.java.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/SkillTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/index.source.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/jacoco/report/html/wrapper/index.source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/landingPage.template.scala" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/twirl/main/views/html/landingPage.template.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/inputs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.13/update/update_cache_2.13/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/_global/checkBuildSources/_global/inputFileStamps/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/input_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/dependencyPositions/_global/streams/update_cache_2.13/output_dsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/playCommonClassloader/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/playCompileEverything/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/_global/update/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/compile/compileIncremental/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/runtime/internalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileBinaryFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileOutputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/compileSourceFileInputs/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/_global/_global/dependencyClasspathFiles/previous" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/_global/_global/dependencyClasspathFiles/previous" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compile/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.13.zip" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncSetup/_global/streams/inc_compile_2.13.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/compileIncremental/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/definedTests/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/dependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/externalDependencyClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/fullClasspath/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/jacocoReport/_global/streams/out" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/jacocoReport/_global/streams/out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/test/managedClasspath/_global/streams/export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/test/test/_global/streams/succeeded_tests" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/web-assets-test/assets/_global/streams/sync-assets-web-assets-test" beforeDir="false" afterPath="$PROJECT_DIR$/target/streams/web-assets-test/assets/_global/streams/sync-assets-web-assets-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/streams/web-assets/assets/_global/streams/sync-assets-web-assets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-reports/TEST-controllers.HomeControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/compilation-error.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/external.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/favicon0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/header-pattern.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/hello-custom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/hello-one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/play-components.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/play-request-response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/play-stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/play_icon_reverse.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/images/request-response.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/javascripts/version2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/web/public/main/stylesheets/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/wrapper/SkillTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/wrapper/SkillTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../project/target/scala-2.12/sbt-1.0/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/.history3" beforeDir="false" afterPath="$PROJECT_DIR$/../target/.history3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/scala-2.12/freelancer_app_6441_2.12-0.1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/scala-2.12/sync/copy-resource" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/scala-2.12/update/update_cache_2.12/output" beforeDir="false" afterPath="$PROJECT_DIR$/../target/scala-2.12/update/update_cache_2.12/output" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/bgRun/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/copyResources/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/exportedProductJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/exportedProducts/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/mainClass/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/packageBin/_global/streams/inputs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/packageBin/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/compile/packageBin/_global/streams/output" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/dependencyClasspathAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/exportedProductJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/externalDependencyClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/fullClasspathAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/internalDependencyAsJars/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/internalDependencyAsJars/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/managedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/unmanagedClasspath/_global/streams/export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/unmanagedClasspath/_global/streams/out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../target/streams/runtime/unmanagedJars/_global/streams/export" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="freelancer-play-soen-6441-project" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="25ect1rB1VImFcpkCXEmeOYo8KH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/controllers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="JUnit.EmployerInfoHelperTest.testGetEmployerProfileInfo">
+    <configuration name="EmployerInfoHelperTest.testGetEmployerProfileInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="freelancer-play-soen-6441-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="helper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="helper" />
+      <option name="MAIN_CLASS_NAME" value="helper.EmployerInfoHelperTest" />
+      <option name="METHOD_NAME" value="testGetEmployerProfileInfo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="tasks" value="" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.EmployerInfoHelperTest.testGetEmployerProfileInfo" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c966edb4-fece-4681-b7b1-842a5a52739e" name="Changes" comment="" />
+      <created>1645891205351</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645891205351</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
